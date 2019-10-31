@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #bddffe;
+}
+
+.login-form {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    padding: 10px 40px;
+    background: #ffffff;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-bottom: 5px solid #bfbfbf;
+    border-radius: 4px;
+}
+
+.win {
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: #f7b506;
+    margin-bottom: -20px;
+}
+
+.salestext {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    word-spacing: 4px;
+    line-height: 40px;
+}
+
+.login-face {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    background: skyblue;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+
+.login-face > img {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+
+}
+
+.login-face > img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.form {
+    width: 100%;
+    position: relative;
+    margin: 25px auto;
+
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    background: #eee;
+    position: relative;
+    margin: 15px auto;
+
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    outline: none;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    padding-top: 12px;
+    color: skyblue;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border: 2px solid #f7b506;
+}
+
+input[type="submit"] {
+    width: 105%;
+    height: 50px;
+    background: #29b268;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    border-radius: 12px;
+}
+
+input[type="submit"]:hover {
+    background-color: #f7b506
+        /*#3e8e41*/
+    ;
+    opacity: 0.9;
+}
+
+.input:hover {
+    position: relative;
+    animation: shake 0.7s;
+}
+
+@keyframes shake {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: -5px;
+    }
+
+    50% {
+        left: 0px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}

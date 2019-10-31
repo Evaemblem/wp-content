@@ -1,0 +1,164 @@
+body {
+    margin-top: 0;
+    padding: 0;
+    color: #bddffe;
+}
+
+.popupCloseButton {
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 50px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: 500;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.login-form {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    margin-top:-700px;
+    padding-left:15px;
+    padding-right:15px;
+    background: #ffffff;
+    left: 92%;
+    top: 2%;
+    transform: translateX(0%) translateY(0%);
+    border-radius: 10px;
+}
+
+.win {
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #f7b506;
+    margin-bottom: -20px;
+}
+
+.salestext {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.login-face {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.login-face > img {
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.login-face > img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.form {
+    width: 100%;
+    position: relative;
+    margin: 25px auto;
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin: 15px auto;
+}
+
+
+#username, #email {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    outline: none;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+}
+
+
+.icon {
+    position: absolute;
+    right: 10px;
+    padding-top: 10px;
+    color: #fbbd28;
+    font-size:5px;
+}
+
+#username:focus,
+#email:focus {
+    border: 2px solid #fbbd28;
+}
+
+#submitBtn {
+    width: 100%;
+    height: 50px;
+    background-color: #29b268;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    align-content: center;
+}
+
+#submitBtn:hover {
+    background-color: #fbbd28;
+}
+
+.input:hover {
+    position: relative;
+    animation: pulse 0.5s;
+}
+
+.login-form {
+    -webkit-animation: slide-fwd-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-fwd-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes login-form {
+    0% {
+        -webkit-transform: translateZ(0) translateX(0);
+        transform: translateZ(0) translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(160px) translateX(-100px);
+        transform: translateZ(160px) translateX(-100px);
+    }
+}
+
+@keyframes slide-fwd-left {
+    0% {
+        -webkit-transform: translateZ(0) translateX(0);
+        transform: translateZ(0) translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(160px) translateX(-100px);
+        transform: translateZ(160px) translateX(-100px);
+    }
+}
