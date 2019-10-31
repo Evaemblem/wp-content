@@ -13,5 +13,5 @@
 */
 
 .elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button {
-    background-color: grey !important;
+    background-color: red !important;
 }
